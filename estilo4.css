@@ -1,0 +1,84 @@
+/* Estilos básicos del cuerpo */
+body {
+    font-family: Arial black; /* Asegúrate de que la fuente esté disponible */
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+/* Estilos para los encabezados */
+.titulo-principal {
+    text-align: center;
+    font-family: 'Berlin Sans FB'; /* Asegúrate de que la fuente esté disponible */
+}
+
+/* Estilos para elementos estructurales */
+header {
+    background-color: rgb(174, 255, 254);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+/* Estilos para secciones */
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color:  rgb(174, 255, 254);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para listas */
+ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Espaciado a la izquierda para las listas */
+    font-family: Arial;
+}
+
+/* Estilos para imágenes */
+.imagen-container {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.ov-btn-slide-left {
+    background: #fff; /* color de fondo */
+    color: #090083; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 2; /* Coloca el botón sobre el video */
+    overflow: hidden;
+    display: inline-block;
+    font-weight: bold; /* Agregado para poner el texto en negrita */
+}
+
+.ov-btn-slide-left:hover {
+    color: #000000; /* color de fuente hover */
+}
+
+.ov-btn-slide-left::after {
+    content: "";
+    background: #64d741; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    transition: all 0.35s;
+}
+
+.ov-btn-slide-left:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}

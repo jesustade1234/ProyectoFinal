@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', sans-serif; /* Usando la fuente Balsamiq Sans */
+}
+
+body {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    background: rgb(174, 255, 254); /* Fondo negro */
+    color: #000000; /* Texto blanco */
+    padding: 10px 0;
+}
+
+/* Estilos para cuadros */
+.cuadro {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgb(174, 255, 254); /* Color blanco para el fondo del cuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor del cuadro */
+}
+
+/* Estilos para secciones */
+.container {
+    max-width: 700px; /* Ancho máximo del contenedor */
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilos para cada sección de preguntas */
+section {
+    border: 2px solid #5624d0; /* Borde morado */
+    border-radius: 7px; /* Bordes redondeados */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Estilos para etiquetas de opciones */
+label {
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc; /* Borde punteado gris claro */
+    margin-bottom: 3px;
+}
+
+label:hover {
+    background: #cec0fc; /* Fondo al pasar el mouse sobre la etiqueta */
+}
+
+/* Estilos para botones */
+button {
+    width: 80%; /* Ancho del botón */
+    display: block;
+    margin: auto; /* Centrar el botón horizontalmente */
+    padding: 10px;
+    background-color:rgb(255, 166, 0); /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 20px; /* Bordes redondeados del botón */
+}
+
+button:hover {
+    background: mediumpurple; /* Color de fondo al pasar el mouse sobre el botón */
+    color: black; /* Color del texto al pasar el mouse sobre el botón */
+}
+
+/* Estilo para encabezados secundarios */
+h2 {
+    text-align: center; /* Centrar texto de h2 */
+}
+
+#resultado {
+    font-size: 30px; /* Tamaño de fuente del resultado */
+    color: darkred; /* Color rojo oscuro para el resultado */
+}
+
+/* Estilos para imágenes */
+img {
+    margin-top: 10px; /* Margen superior para imágenes */
+    max-width: 100%; /* Ancho máximo de la imagen al contenedor */
+    height: auto; /* Mantener proporciones de la imagen */
+    border-radius: 10px; /* Bordes redondeados en imágenes */
+}

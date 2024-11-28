@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ensayo</title>
+    <link rel="stylesheet" href="css/juego.css">
+</head>
+<body background="prueba13.jpg">
+
+<div class="cuadro">
+    <div class="game-container">
+        <h2>Juego del Ensayo</h2>
+        <p>Arrastra las características del ensayo a la sección correspondiente (Introducción, Desarrollo, Conclusión).</p>
+        
+        <div class="drop-container">
+            <div id="introduccion" class="drop-box" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Introducción</p>
+            </div>
+            <div id="desarrollo" class="drop-box" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Desarrollo</p>
+            </div>
+            <div id="conclusion" class="drop-box" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Conclusión</p>
+            </div>
+        </div>
+
+        <div class="draggable-container">
+            <div id="c1" class="draggable" draggable="true" ondragstart="drag(event)">Presenta el tema y contexto.</div>
+            <div id="c2" class="draggable" draggable="true" ondragstart="drag(event)">Desarrolla los argumentos y evidencia.</div>
+            <div id="c3" class="draggable" draggable="true" ondragstart="drag(event)">Resume las ideas y cierra el tema.</div>
+        </div>
+
+        <button id="submit-button" onclick="checkAnswers()">Verificar Respuestas</button>
+
+        <!-- Mensaje de resultado -->
+        <h2 id="resultado"></h2>
+
+        <!-- Botón para reiniciar el juego -->
+        <button onclick="reiniciarJuego()">Reiniciar Juego</button>
+        <!-- Botón para regresar a la página principal -->
+        <button onclick='window.location.href = "Que es el ensayo.html";'>Regresar a la página principal</button> <!-- file:///D:/Copia%20Proyecto%20Final/Que%20es%20el%20ensayo.html -->
+    </div>
+</div>
+
+<script src="juego.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio: El ensayo</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body background="prueba13.jpg">
+    <header>
+        <h1>Ejercicio: El ensayo</h1>
+        <p>Responde las siguientes preguntas relacionadas con el ensayo.</p>
+    </header>
+
+    <div class="cuadro">
+        <div class="container">
+            <section id="p0">
+                <h3>1. - ¿Qué es un ensayo?</h3>
+                <label>
+                    <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Un tipo de poema
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Un texto argumentativo sobre un tema
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Un artículo de noticias
+                </label>
+                <div style="text-align:center;">
+                    <img src="ens.avif" alt="Imagen sobre ensayo" style="max-width: 50%; height: auto;"/>
+                </div>
+            </section>
+
+            <section id="p1">
+                <h3>2. - ¿Qué estructura tiene un ensayo comúnmente?</h3>
+                <label>
+                    <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Introducción, desarrollo y cierre o conclusión
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> Solo introducción
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Cuerpo y conclusión, sin introducción
+                </label>
+                <div style="text-align:center;">
+                    <img src="est.jfif" alt="Estructura del ensayo" style="max-width: 50%; height: auto;"/>
+                </div>
+            </section>
+
+            <section id="p2">
+                <h3>3. - ¿Cuáles son los elementos fundamentales de un ensayo?</h3>
+                <label>
+                    <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Tesis, argumentos, y evidencia
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Opinión personal, sin necesidad de evidencia
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> Solo introducción y conclusión
+                </label>
+                <div style="text-align:center;">
+                    <img src="elem.png" alt="Elementos de un ensayo" style="max-width: 50%; height: auto;"/>
+                </div>
+            </section>
+
+            <section id="p3">
+                <h3>4. - ¿Cuál es el propósito principal de un ensayo?</h3>
+                <label>
+                    <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Exponer, argumentar y persuadir
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Solo exponer información
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Contar una historia personal
+                </label>
+                <div style="text-align:center;">
+                    <img src="prop.jpg" alt="Propósito del ensayo" style="max-width: 50%; height: auto;"/>
+                </div>
+            </section>
+
+            <section id="p4">
+                <h3>5. - ¿Cómo se diferencia un ensayo de un artículo de opinión?</h3>
+                <label>
+                    <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> El ensayo tiene una estructura más formal y analítica
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> El artículo de opinión es más formal que el ensayo
+                </label>
+                <label>
+                    <input type="radio" value= "3"name= "p4"
+onclick= "respuesta(4,this)"> No hay diferencias entre un ensayo y un artículo de opinión
+</label>
+
+<div style= "text-align:center;">
+<img src= "diferencia.jpg"
+alt= "Diferencias entre ensayo y artículo de opinión"
+style= "max-width: 50%; height: auto;"/>
+</div>
+
+</section>
+
+<button onclick= "corregir()">Ver calificación</button><br>
+
+<button onclick= "reiniciar()">Reiniciar</button>
+
+<h2>Cantidad acertadas: 
+<span id= "resultado"></span></h2>
+
+</div>
+
+<script src= "quiz.js"></script>
+<br>
+<button onclick='window.location.href = "Que es el ensayo.html";'>Regresar a la pagina principal</button><file:///D:/Copia%20Proyecto%20Final/Que%20es%20el%20ensayo.html>
+<br>
+<button onclick= "window.location.href='quizdos.html';">Ir al siguiente ejercicio</button>
+
+</body>
+
+</html>

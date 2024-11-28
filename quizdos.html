@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: El ensayo</title>
+    <link rel="stylesheet" href="css/quizdos.css">
+</head>
+<body background="prueba13.jpg">
+
+    <header>
+        <h1>Ejercicio 2: El ensayo</h1>
+        <p>Responde lo siguiente relacionado con el ensayo.</p>
+    </header>
+
+    <div class="cuadro">
+        <div class="container">
+            <section id="p0">
+                <h3>1. - Ensayo donde presentas datos científicos</h3>
+                <label>
+                    <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Ensayo Histórico
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Ensayo expositivo
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Ensayo crítico
+                </label>
+                <div style="text-align:center;">
+                    <img src="cienti.webp" alt="Imagen sobre ensayo" style="max-width: 50%; height: auto;"/>
+                </div>
+            </section>
+
+            <section id="p1">
+                <h3>2. - Ensayo donde relatas una experiencia personal</h3>
+                <label>
+                    <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Ensayo narrativo
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> Ensayo filosófico
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Ensayo expositivo
+                </label>
+                <div style="text-align:center;">
+                    <img src="expe.jpg" alt="Estructura del ensayo" style="max-width: 50%; height: auto;"/>
+                </div>
+            </section>
+
+            <section id="p2">
+                <h3>3. - Ensayo donde comparas dos temas</h3>
+                <label>
+                    <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Ensayo comparativo
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Ensayo científico
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> Ensayo académico
+                </label>
+                <div style="text-align:center;">
+                    <img src="compa.jpg" alt="Elementos de un ensayo" style="max-width: 50%; height: auto;"/>
+                </div>
+            </section>
+
+            <section id="p3">
+                <h3>4. - Ensayo donde argumentas a favor o en contra de algo</h3>
+                <label>
+                    <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Ensayo argumentativo
+                </label>
+                <label>
+                    <input type="radio" value "2"name= "p3"
+onclick= "respuesta(3,this)"> Ensayo académico
+</label>
+
+<label><input type= "radio"
+value= "3"
+name= "p3"
+onclick= "respuesta(3,this)"> Ensayo expositivo</label>
+
+<div style= "text-align:center;">
+<img src= "afa.webp"
+alt= "Propósito del ensayo"
+style= "max-width: 50%; height: auto;"/>
+</div>
+
+</section>
+
+<section id= "p4">
+<h3>5. - Ensayo donde describes detalladamente un objeto o situación</h3>
+
+<label><input type= "radio"
+value= "1"
+name= "p4"
+onclick= "respuesta(4,this)">Ensayo descriptivo</label>
+
+<label><input type= "radio"
+value= "2"
+name= "p4"
+onclick= "respuesta(4,this)">Ensayo narrativo</label>
+
+<label><input type= "radio"
+value= "3"
+name= "p4"
+onclick= "respuesta(4,this)">No existe</label>
+
+<div style= "text-align:center;">
+<img src= "obj.webp"
+alt= "Diferencias entre ensayo y artículo de opinión"
+style= "max-width: 50%; height: auto;"/>
+</div>
+
+</section>
+
+<button onclick= "corregir()">Ver calificación</button><br>
+
+<button onclick= "reiniciar()">Reiniciar</button>
+
+<h2>Cantidad acertadas: 
+<span id= "resultado"></span></h2>
+
+        </div>
+
+        <!-- Script para la funcionalidad -->
+        <script src='quizdos.js'></script>
+        <button onclick='window.location.href = "quiz.html";'>Regresar al ejercicio anterior</button><file:///D:/Copia%20Proyecto%20Final/quiz.html>
+<br>
+        <!-- Botón para ir a otra página -->
+        <!-- Corregido el uso de comillas simples -->
+        <button onclick='window.location.href = "Que es el ensayo.html";'>Regresar a la pagina principal</button><file:///D:/Copia%20Proyecto%20Final/Que%20es%20el%20ensayo.html>
+
+    </div>
+
+</body>
+</html>

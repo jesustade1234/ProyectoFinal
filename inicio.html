@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh; 
+            background-color: #000000;
+            margin: 0; 
+            font-family: 'Arial', sans-serif;
+        }
+        .contenedor {
+            display: flex; 
+            position: relative; 
+        }
+        .carta {
+            width: 150px; 
+            height: 200px;
+            margin: 15px; 
+            padding: 10px; 
+            background-color: #ff5e00; 
+            color: rgb(0, 0, 0); 
+            border-radius: 10px; 
+            box-shadow: 0 4px 15px #ffffff; 
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            font-size: 17px; 
+            transition: transform 0.3s, background-color 0.3s; 
+            position: relative; 
+        }
+        .carta img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 8px; 
+        }
+        .carta:hover {
+            transform: translateY(-5px); 
+            background-color: #70f777;
+        }
+    </style>
+</head>
+<body background="prueba13.jpg">
+
+    <div class="contenedor">
+        <a href="Que es el ensayo.html" class="carta"> <!-- Enlace a la página correspondiente -->
+            <img src="elensayo.webp" alt="Imagen 1">
+            <br>
+            ¿QUÉ ES?
+        </a>
+        <a href="caracterisicas.html" class="carta"> <!-- Enlace a la página correspondiente -->
+            <img src="foco.webp" alt="Imagen 2">
+            <br>
+            CARACTERISTICAS
+        </a>
+        <a href="¿Como hacer un ensayo (1).html" class="carta"> <!-- Enlace a la página correspondiente -->
+            <img src="leyendo.jpg" alt="Imagen 3">
+            <br>
+            COMO HACER UN ENSAYO
+        </a>
+    </div>
+
+    <div class="contenedor">
+        <a href="La importancia del ensayo (1).html" class="carta"> <!-- Enlace a la página correspondiente -->
+            <img src="ensayoo.jpg" alt="Imagen 4">
+            <br>
+            IMPORTANCIA DE UN ENSAYO
+        </a>
+    </div>
+
+    <div class="contenedor">
+        <a href="partes de un ensayo (1).html" class="carta"> <!-- Enlace a la página correspondiente -->
+                <img src="ensayo1.jpg" alt="Imagen 5">
+                <br>
+                PARTES DE UN ENSAYO
+        </a>
+    </div>
+
+</body>
+</html>

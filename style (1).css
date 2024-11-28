@@ -1,0 +1,128 @@
+body {
+    font-family: Impact;
+    background-color: #119b23;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+ h1 {
+    font-family: Berlin Sans FB;
+ }
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+h2{
+    font-family: Berlin Sans FB ;
+    color: #d3a718;
+}
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 28, 29, 0.5); 
+    z-index: 0; 
+}
+
+header, nav, section, footer {
+    position: relative; /* Asegura que estos elementos estén encima del fondo */
+    z-index: 1; /* Coloca estos elementos encima de la capa oscura */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+nav {
+    background-color: #d3a718;
+    overflow: hidden;
+}
+
+nav a {
+    color: rgb(12, 12, 12);
+    padding: 14px 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgb(30, 194, 117);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(184, 18, 18, 0.1);
+    position: relative;
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 30px;
+}
+
+.ov-btn-slide-left {
+    background: #fff; /* color de fondo */
+    color: #1a7ccc; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 2; /* Coloca el botón sobre el video */
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ov-btn-slide-left:hover {
+    color: #fff; /* color de fuente hover */
+}
+
+.ov-btn-slide-left::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    transition: all 0.35s;
+}
+
+.ov-btn-slide-left:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', sans-serif; /* Usando la fuente Balsamiq Sans */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos para el cuadro que contiene el juego */
+.cuadro {
+    padding: 20px;
+    max-width: 800px; /* Ancho máximo del cuadro */
+    background-color:rgb(174, 255, 254); /* Color blanco para el fondo del cuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor del cuadro */
+}
+
+.game-container {
+    text-align: center;
+}
+
+.draggable {
+    background-color: #ffffff;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+}
+
+.drop-box {
+    width: 220px;
+    height: 120px;
+    border: 2px dashed #4CAF50; /* Borde punteado verde */
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    text-align: center;
+}
+
+.drop-box p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Color del texto en las cajas de caída */
+}
+
+#submit-button {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados del botón */
+}
+
+#submit-button:hover {
+   background-color: #45a049; /* Color de fondo al pasar el mouse sobre el botón */
+}
+
+/* Estilo para mostrar resultados */
+#resultado {
+   font-size: 30px; /* Tamaño de fuente del resultado */
+   color: darkred; /* Color rojo oscuro para el resultado */
+   margin-top: 20px; /* Margen superior para separar del botón */
+}
+
+/* Estilos para los botones de reinicio y regresar */
+button {
+   margin-top: 10px; /* Margen superior para separar de otros botones */
+   background-color:rgb(255, 166, 0); /* Color de fondo por defecto */
+   border-radius: 20px; /* Bordes redondeados */
+   padding: 10px; /* Espaciado interno del botón */
+   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+   background-color: mediumpurple; /* Color al pasar el mouse sobre los botones */
+   color: black; /* Cambia el color del texto al pasar el mouse sobre los botones */
+}
+
+.correct {
+    background-color: #d4edda; /* Color verde claro para respuestas correctas */
+}
+
+.incorrect {
+    background-color: #f8d7da; /* Color rojo claro para respuestas incorrectas */
+}
